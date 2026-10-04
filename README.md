@@ -110,3 +110,7 @@ Removal stops future automatic mode changes. It does not restore the previous li
 ## Reporting compatibility
 
 When reporting success or a problem, include the exact PC model, BIOS/firmware version, Linux distribution, kernel version (`uname -r`), modes tried, and relevant service logs. Review logs for personal information before sharing.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
