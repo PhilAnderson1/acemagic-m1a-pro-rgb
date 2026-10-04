@@ -6,13 +6,13 @@ Select an RGB lighting mode on an **ACEMAGIC M1A Pro+ with AMD Ryzen AI Max+ 395
 
 ## Supported modes
 
-| Mode | EC value | Verification on the M1A Pro+ |
-| --- | --- | --- |
-| `off` | `0x00` | Tested |
-| `auto` | `0x01` | Decoded from the vendor program; not yet tested |
-| `rainbow` | `0x02` | Restoring this value has been tested |
-| `breathing` | `0x03` | Decoded from the vendor program; not yet tested |
-| `color-cycle` | `0x04` | Decoded from the vendor program; not yet tested |
+| Mode | EC value |
+| --- | --- |
+| `off` | `0x00` |
+| `auto` | `0x01` |
+| `rainbow` | `0x02` |
+| `breathing` | `0x03` |
+| `color-cycle` | `0x04` |
 
 `colour-cycle` is also accepted as an alias for `color-cycle`. The default installer mode is `off`.
 
