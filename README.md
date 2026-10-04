@@ -18,12 +18,6 @@ Select an RGB lighting mode on an **ACEMAGIC M1A Pro+ with AMD Ryzen AI Max+ 395
 
 The script records that the mode names and values were decoded from ACEMAGIC's `LedControl_S3A_F3A.exe` (2025-01-15), distributed as S3A/AMR5 lighting software. `auto` is implemented but hidden in that Windows utility's interface. The command selects these predefined modes; it has no custom color, brightness, or animation speed options.
 
-## Hardware scope
-
-The command accesses the embedded controller (EC) through the Linux `ec_sys` debug interface and writes the selected mode to offset `0xFC`. Incorrect EC writes can affect hardware behavior. Use it only on the specified hardware after reviewing the script. Compatibility with other models or firmware versions has not been established; other ACEMAGIC models can use different controllers or mode values.
-
-Before writing, the command requires the current byte to be one of `0x00` through `0x04`. This checks the register value, **not the computer's model**. It serializes its own command instances with a lock, enables EC writes only when the mode needs changing, and checks the value after writing. It attempts to disable EC write support afterward, including on errors and when write support was already enabled on entry.
-
 ## Requirements
 
 - Linux with systemd; the installer was written for Ubuntu.
