@@ -47,8 +47,6 @@ The installer creates:
 
 It enables the service at boot and restarts it immediately to apply the selected mode. Re-run the installer with a different mode to change the startup setting; it replaces the installed command and service.
 
-When upgrading from the earlier RGB-off installer, the new installer disables and removes `acemagic-rgb-off.service` and removes `/usr/local/sbin/acemagic-rgb-off` if the old service file exists in `/etc/systemd/system/`. This prevents the old service from competing with the new startup setting.
-
 ## Change the lights immediately
 
 After installation, run the command with the desired mode:
