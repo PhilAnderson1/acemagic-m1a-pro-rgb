@@ -16,7 +16,7 @@ Select an RGB lighting mode on an **ACEMAGIC M1A Pro+ with AMD Ryzen AI Max+ 395
 
 `colour-cycle` is also accepted as an alias for `color-cycle`. The default installer mode is `off`.
 
-The mode names and values were decoded from ACEMAGIC's `LedControl_S3A_F3A.exe` (2025-01-15), distributed as S3A/AMR5 lighting software. `auto` is implemented but hidden in that Windows utility's interface. The command selects these predefined modes; it has no custom color, brightness, or animation speed options.
+The mode names and values were decoded from ACEMAGIC's `LedControl_S3A_F3A.exe` (2025-01-15), distributed as S3A/AMR5 lighting software.
 
 ## Requirements
 
