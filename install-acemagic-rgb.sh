@@ -36,9 +36,12 @@ if [ "$(id -u)" -ne 0 ]; then
     exit 1
 fi
 
-command -v python3 >/dev/null
-command -v modprobe >/dev/null
-command -v systemctl >/dev/null
+for cmd in python3 modprobe systemctl; do
+    command -v "$cmd" >/dev/null 2>&1 || {
+        echo "Error: required command '$cmd' is not installed or not in PATH." >&2
+        exit 1
+    }
+done
 
 rgb_install_tmp=$(mktemp -d)
 trap 'rm -rf -- "$rgb_install_tmp"' EXIT
