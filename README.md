@@ -28,7 +28,7 @@ The mode names and values were decoded from ACEMAGIC's `LedControl_S3A_F3A.exe` 
 
 ## Install or change the startup mode
 
-Download or clone this repository, review `install-acemagic-rgb.sh`, then run it from the repository directory. For example, select rainbow now and at every boot:
+Download and unpack the [latest release](https://github.com/PhilAnderson1/acemagic-m1a-pro-rgb/releases/latest) and run `./install-acemagic-rgb.sh`, giving it an optional argument for the default RGB lighting mode. For example, to select rainbow now and at every boot:
 
 ```sh
 sudo sh install-acemagic-rgb.sh rainbow
