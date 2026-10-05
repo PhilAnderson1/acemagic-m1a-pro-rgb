@@ -5,11 +5,8 @@
 #
 # Protocol decoded from ACEMAGIC's LedControl_S3A_F3A.exe (2025-01-15):
 # https://acemagic.com/pages/drivers-downloads (S3A/AMR5 lighting software)
-# SHA256: 69375f6ea8d2862352e214e768c1a2d32c1b0184347a75159e8c1cbe30de93e6
 # EC 0xFC: off=0, Auto=1, Rainbow=2, Breathing=3, Color Cycle=4.
 # Auto is implemented but hidden in that Windows utility's interface.
-# Off and restoring 0x02 have been verified on the M1A Pro+; other modes
-# are decoded from the vendor program, not yet tested on that hardware.
 # Other ACEMAGIC models can use different controllers or mode values.
 set -eu
 
