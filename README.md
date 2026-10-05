@@ -105,10 +105,6 @@ sudo systemctl reset-failed acemagic-rgb.service 2>/dev/null || true
 
 Removal stops future automatic mode changes. It does not restore the previous lighting value, which the command does not save, or unload `ec_sys`. If you want a particular mode left active, set it before uninstalling.
 
-## Reporting compatibility
-
-When reporting success or a problem, include the exact PC model, BIOS/firmware version, Linux distribution, kernel version (`uname -r`), modes tried, and relevant service logs. Review logs for personal information before sharing.
-
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
